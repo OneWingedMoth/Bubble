@@ -1,4 +1,76 @@
-html {
-  height: 100%;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Page {
+  padding: 2%;
+  text-align: center;
+  background: #d1f0ff;
+}
+
+.PageName {
+  pad-below: 30%;
+}
+
+
+
+/* FONT */
+.matemasie-regular {
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito-<uniquifier> {
+  font-family: "Nunito", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+/* TEXT */
+
+h1 {
+  font-size: 73px;
+  font-family: "Matemasie", "Nunito", Times New Roman;
+  font-weight: 400;
+  font-style: normal;
+  color: #2a77bf;
+}
+
+p {
+  font-size: 15px;
+  font-family: "Nunito", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+}
+
+/* Style Nav bar */
+
+ul {
+  width: auto;
+  height: auto;
+  list-style-type: none;
+  text-align: right;
+  background-color: #9be3ff;
+  padding: 10px;
+  margin: 0;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  padding-right: 10px;
+  font-family: "Nunito", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
