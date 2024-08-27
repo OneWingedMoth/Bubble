@@ -3,20 +3,45 @@
   padding: 0;
 }
 
+.clouds img {
+  animation: slideLtoR ease infinite alternate;
+  width: 15%;
+}
+
+.cloud1 {
+  animation-duration: 8s;
+  animation-delay: 4s;
+  animation: slideLtoR ease infinite alternate;
+
+}
+
+.cloud2 {
+  animation-duration: 14s;
+  animation-delay: 10s;
+  animation: slideLtoR ease infinite alternate;
+
+}
+
+.cloud3 {
+  animation-duration: 12s;
+  animation-delay: 7s;
+  animation: slideLtoR ease infinite alternate;
+
+}
+
 .dot {
-  width: 70%;
+  width: 25%;
   height: auto;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
   animation: breathe 8s ease infinite alternate;
-
 }
 
 .title {
-  pad-top: 4%;
-  margin-bottom: -140px;
+  margin-bottom: -27%;
+  margin-top: -5%;
 }
 
 img[src*="bubble"] {
@@ -25,21 +50,20 @@ img[src*="bubble"] {
 }
 
 .Page {
-  padding: 2%;
+  padding: 1%;
   text-align: center;
   background: #d1f0ff;
 }
 
 .PageName {
-  padding: 1%;
 }
 
 path {
   fill: transparent;
 }
 
-text {
-  font-size: 73px;
+.index_text {
+  font-size: 35px;
   font-family: "Matemasie", "Nunito", Times New Roman;
   font-weight: 400;
   font-style: normal;
@@ -47,20 +71,48 @@ text {
   letter-spacing: 4px;
 }
 
+.bubble_text {
+  font-size: 35px;
+  font-family: "Matemasie", "Nunito", Times New Roman;
+  font-weight: 400;
+  font-style: normal;
+  fill: #79acdb;
+  letter-spacing: 4px;
+  animation: FadeAway 1s ease 1;
+  animation-delay: 2s;
+}
 
+.blurb {
+  text-align: justify;
+  margin: 1%;
+
+}
+
+.blurb_container {
+  background: #9be3ff;
+  border-radius: 40px;
+  margin: 6%;
+  padding: 3%;
+}
+
+#background{
+  background: #d1f0ff;
+}
+
+.spotify {
+  padding: 3%;
+}
 
 /* FONT */
 .matemasie-regular {
   font-family: "Matemasie", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
 .nunito-<uniquifier> {
   font-family: "Nunito", system-ui;
   font-optical-sizing: auto;
   font-weight: <weight>;
-  font-style: normal;
 }
 
 
@@ -70,17 +122,23 @@ h1 {
   font-size: 73px;
   font-family: "Matemasie", "Nunito", Times New Roman;
   font-weight: 400;
-  font-style: normal;
   color: #79acdb;
 }
 
-p {
+h3 {
   font-size: 15px;
   font-family: "Nunito", system-ui;
   font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: black;
+  font-weight: 700;
+  color: white;
+}
+
+p {
+  font-size: 13px;
+  font-family: "Nunito", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: white;
 }
 
 /* Style Nav bar */
@@ -127,5 +185,26 @@ li a {
     transform: scale(1);
   }
   
+}
+
+@keyframe FadeAway {
+
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframe slideLtoR {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
 }
 

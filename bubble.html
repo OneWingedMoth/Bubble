@@ -15,24 +15,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+  <link rel="icon" href="assets/bubble.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 
-<body>
-  <div class="PageName">
+<body scroll="no" style="overflow: hidden">
+  <div class="PageName" id="background">
     <div class="title">
     <svg viewBox="0 -10 500 200">
       <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
   
-      <text width="500">
-        <textPath alignment-baseline="top" xlink:href="#curve">
+      <text class="bubble_text" width="500">
+        <textPath alignment-baseline="top" xlink:href="#curve" startOffset="110">
           Breathe...
         </textPath>
       </text>
     </svg>
     </div>
     <div class="dot">
-      <a href="bubble.html">
+      <a href="index.html">
       <img src="assets/bubble.png">
       </a>  
     </div>
+    <div class="clouds">
+      <img id="cloud1" src="assets/cloud1.png">
+      <img id="cloud2" src="assets/cloud2.png">
+      <img id="cloud3" src="assets/cloud3.png">
+    </div>
+    <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/44W9qsHG5XrvcaMuNkNNyb?utm_source=generator" width="48%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    
 </body>
