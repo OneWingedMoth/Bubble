@@ -3,46 +3,59 @@
   padding: 0;
 }
 
-.clouds img {
-  animation: slideLtoR ease infinite alternate;
+body {
+  position: relative;
+}
+
+.cloud {
+  position: relative;
+  z-index: 1;
+  width: 15%;
+  height: 200px;
+}
+
+
+.clouds1 img {
+  animation: slideLtoR1 32s linear 8s infinite;
+  position: absolute;
   width: 15%;
 }
 
-.cloud1 {
-  animation-duration: 8s;
-  animation-delay: 4s;
-  animation: slideLtoR ease infinite alternate;
-
+.clouds2 img {
+  animation: slideLtoR3 34s linear 1s infinite;
+  position: absolute;
+  width: 15%;
 }
 
-.cloud2 {
-  animation-duration: 14s;
-  animation-delay: 10s;
-  animation: slideLtoR ease infinite alternate;
-
-}
-
-.cloud3 {
-  animation-duration: 12s;
-  animation-delay: 7s;
-  animation: slideLtoR ease infinite alternate;
-
+.clouds3 img {
+  animation: slideLtoR3 48s linear 6s infinite;
+  transform: translateY(-400%);
+  position: absolute;
+  width: 15%;
 }
 
 .dot {
-  width: 25%;
   height: auto;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  animation: breathe 8s ease infinite alternate;
+  animation: breathe 8s ease infinite;
+}
+
+#main {
+  width: 25%;
+}
+
+#meditation {
+  width: 30%;
 }
 
 .title {
   margin-bottom: -27%;
   margin-top: -5%;
 }
+
 
 img[src*="bubble"] {
   width: 100%;
@@ -55,7 +68,8 @@ img[src*="bubble"] {
   background: #d1f0ff;
 }
 
-.PageName {
+.PageName #background{
+  padding: 1%;
 }
 
 path {
@@ -64,7 +78,7 @@ path {
 
 .index_text {
   font-size: 35px;
-  font-family: "Matemasie", "Nunito", Times New Roman;
+  font-family: "Matemasie", "Nunito", Sans-Serif;
   font-weight: 400;
   font-style: normal;
   fill: #79acdb;
@@ -72,14 +86,14 @@ path {
 }
 
 .bubble_text {
-  font-size: 35px;
-  font-family: "Matemasie", "Nunito", Times New Roman;
+  font-size: 30px;
+  font-family: "Matemasie", "Nunito", Sans-Serif;
   font-weight: 400;
   font-style: normal;
   fill: #79acdb;
   letter-spacing: 4px;
-  animation: FadeAway 1s ease 1;
-  animation-delay: 2s;
+  animation: FadeAway 17s ease;
+  opacity: 0;
 }
 
 .blurb {
@@ -100,7 +114,8 @@ path {
 }
 
 .spotify {
-  padding: 3%;
+  padding: 1%;
+  text-align: right;
 }
 
 /* FONT */
@@ -187,24 +202,45 @@ li a {
   
 }
 
-@keyframe FadeAway {
+@keyframes FadeAway {
 
-  from {
+  0%,
+  60% {
     opacity: 1;
   }
   
-  to {
+  100% {
     opacity: 0;
   }
 }
 
-@keyframe slideLtoR {
+@keyframes slideLtoR1 {
   from {
-    transform: translateX(-100%);
+    transform: translate(-100%, -400%);
   }
 
   to {
-    transform: translateX(200%);
+    transform: translate(100vw, -400%);
+  }
+}
+
+@keyframes slideLtoR2 {
+  from {
+    transform: translate(-100%, -300%);
+  }
+
+  to {
+    transform: translate(100vw, -300%);
+  }
+}
+
+@keyframes slideLtoR3 {
+  from {
+    transform: translate(-100%, -500%);
+  }
+
+  to {
+    transform: translate(100vw, -500%);
   }
 }
 
