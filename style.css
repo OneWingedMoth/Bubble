@@ -24,7 +24,7 @@
   height: 30%;
   margin-left: auto;
   margin-right: auto;
-  animation: breathe 8s ease infinite;
+  animation: breathe 19s ease infinite;
 }
 
 #meditation {
@@ -32,7 +32,7 @@
   height: 30%;
   margin-left: auto;
   margin-right: auto;
-  animation: breathe 8s ease infinite;
+  animation: breathe 19s ease infinite;
 }
 
 @keyframes breathe {
@@ -40,11 +40,11 @@
     transform: scale(1);
   }
 
-  50% {
+  21% {
     transform: scale(1.2);
   }
 
-  65% {
+  58% {
     transform: scale(1.2);
   }
 
@@ -228,6 +228,10 @@ p {
 
 /* Style Nav bar */
 
+.main_page {
+  background-color: #9be3ff;
+}
+
 ul {
   width: auto;
   height: auto;
@@ -235,7 +239,8 @@ ul {
   text-align: right;
   background-color: #9be3ff;
   padding: 10px;
-  margin: 0;
+  margin: 1%;
+  z-index: 2;
 }
 
 li {
@@ -245,7 +250,7 @@ li {
 li a {
   color: white;
   text-decoration: none;
-  padding-right: 10px;
+  padding-right: 3%;
   font-family: "Nunito", system-ui;
   font-optical-sizing: auto;
   font-weight: 700;
