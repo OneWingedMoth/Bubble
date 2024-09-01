@@ -3,63 +3,78 @@
   padding: 0;
 }
 
-
-.cloud {
-  position: relative;
-  height: 500px;
-}
-
-
-.clouds1 img {
-  animation: slideLtoR1 57s linear 28 infinite;
-  position: absolute;
-  z-index: -1;
-  width: 15%;
-  opacity: 0;
-}
-
-.clouds2 img {
-  animation: slideLtoR3 40s linear 1s infinite;
-  position: absolute;
-  z-index: -1;
-  width: 15%;
-  opacity: 0;
-}
-
-.clouds3 img {
-  animation: slideLtoR2 48s linear 23s infinite;
-  z-index: -1;
-  position: absolute;
-  width: 15%;
-  opacity: 0;
-
-}
-
-.clouds4 img {
-  animation: slideLtoR2 45s linear 7s infinite;
-  z-index: -1;
-  positionLabsolutte;
-  width: 15%;
-  opacity: 0;
-}
-
+/* Bubble */
 .dot {
-  height: 30%;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  animation: breathe 8s ease infinite;
   position: relative;
   z-index: 1;
 }
 
+.dot p {
+  color: #79acdb;
+}
+
+#menu {
+  width: 25%;
+}
+
 #main {
   width: 25%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: breathe 8s ease infinite;
 }
 
 #meditation {
   width: 30%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: breathe 8s ease infinite;
+}
+
+@keyframes breathe {
+  0%{
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  65% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+
+/* GENERAL */
+
+.menu_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+.nav_home {
+  text-align: center;
+  padding-bottom: 300%;
+}
+
+.nav_home p {
+  font-size: 9px;
+  font-style: italic;
+  color: #79acdb;
 }
 
 .title {
@@ -70,7 +85,6 @@
 #main_page {
    margin-bottom: -23%;
 }
-
 
 img[src*="bubble"] {
   width: 100%;
@@ -89,26 +103,6 @@ img[src*="bubble"] {
 
 path {
   fill: transparent;
-}
-
-.index_text {
-  font-size: 35px;
-  font-family: "Matemasie", "Nunito", Sans-Serif;
-  font-weight: 400;
-  font-style: normal;
-  fill: #79acdb;
-  letter-spacing: 4px;
-}
-
-.bubble_text {
-  font-size: 30px;
-  font-family: "Matemasie", "Nunito", Sans-Serif;
-  font-weight: 400;
-  font-style: normal;
-  fill: #79acdb;
-  letter-spacing: 4px;
-  animation: FadeAway 17s ease;
-  opacity: 0;
 }
 
 .blurb {
@@ -131,6 +125,8 @@ path {
 #background{
   background: #d1f0ff;
 }
+
+/* SPOTIFY */
 
 .spotify {
   text-align: right;
@@ -168,13 +164,6 @@ path {
   font-weight: 400;
 }
 
-.nunito-<uniquifier> {
-  font-family: "Nunito", system-ui;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-}
-
-
 /* TEXT */
 
 h1 {
@@ -200,6 +189,25 @@ p {
   color: white;
 }
 
+.index_text {
+  font-size: 35px;
+  font-family: "Matemasie", "Nunito", Sans-Serif;
+  font-weight: 400;
+  font-style: normal;
+  fill: #79acdb;
+  letter-spacing: 4px;
+}
+
+.bubble_text {
+  font-size: 30px;
+  font-family: "Matemasie", "Nunito", Sans-Serif;
+  font-weight: 400;
+  font-style: normal;
+  fill: #79acdb;
+  letter-spacing: 4px;
+  animation: FadeAway 17s ease;
+  opacity: 0;
+}
 
 /* Style Nav bar */
 
@@ -228,24 +236,6 @@ li a {
 }
 
 /* ANIMATIONS */
-@keyframes breathe {
-  0%{
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-
-  65% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-  
-}
 
 @keyframes FadeAway {
 
@@ -257,6 +247,45 @@ li a {
   100% {
     opacity: 0;
   }
+}
+
+/* CLOUDS */
+
+.cloud {
+  position: relative;
+  height: 500px;
+}
+
+.clouds1 img {
+  animation: slideLtoR1 57s linear 28 infinite;
+  position: absolute;
+  z-index: -1;
+  width: 15%;
+  opacity: 0;
+}
+
+.clouds2 img {
+  animation: slideLtoR3 40s linear 1s infinite;
+  position: absolute;
+  z-index: -1;
+  width: 15%;
+  opacity: 0;
+}
+
+.clouds3 img {
+  animation: slideLtoR2 48s linear 23s infinite;
+  z-index: -1;
+  position: absolute;
+  width: 15%;
+  opacity: 0;
+}
+
+.clouds4 img {
+  animation: slideLtoR2 45s linear 7s infinite;
+  z-index: -1;
+  positionLabsolutte;
+  width: 15%;
+  opacity: 0;
 }
 
 @keyframes slideLtoR1 {
