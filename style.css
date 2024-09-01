@@ -7,7 +7,6 @@
 .cloud {
   position: relative;
   height: 500px;
-  background: ;
 }
 
 
@@ -45,7 +44,7 @@
 }
 
 .dot {
-  height: auto;
+  height: 30%;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -53,7 +52,6 @@
   animation: breathe 8s ease infinite;
   position: relative;
   z-index: 1;
-
 }
 
 #main {
@@ -65,8 +63,12 @@
 }
 
 .title {
-  margin-bottom: -27%;
+  margin-bottom: -29%;
   margin-top: -5%;
+}
+
+#main_page {
+   margin-bottom: -23%;
 }
 
 
@@ -136,7 +138,7 @@ path {
 }
 
 .spotify_div {
-  height: .2%;
+  height: 90px;
   overflow: hidden;
 }
 
@@ -147,18 +149,17 @@ path {
 #meditation_container {
   margin: 0%;
   margin-top: 0%;
-  padding: 2%;
+  padding: 1.7%;
   margin-left: 4%;
-  max-width: 28%;
+  max-width: 32%;
 }
-
 
 .meditation_footer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2%;
-  padding-top: 4%;
+  padding-top: 2%;
 }
 
 /* FONT */
@@ -261,36 +262,36 @@ li a {
 @keyframes slideLtoR1 {
   from {
     transform: translate(-100%, -400%);
-    opacity: 1;
+    opacity: .6;
   }
 
   to {
     transform: translate(100vw, -400%);
-    opacity: 1;
+    opacity: .6;
   }
 }
 
 @keyframes slideLtoR2 {
   from {
     transform: translate(-100%, -300%);
-    opacity: 1;
+    opacity: .6;
   }
 
   to {
     transform: translate(100vw, -300%);
-    opacity: 1;
+    opacity: .6;
   }
 }
 
 @keyframes slideLtoR3 {
   from {
     transform: translate(-100%, -250%);
-    opacity: 1;
+    opacity: .6;
   }
 
   to {
     transform: translate(100vw, -250%);
-    opacity: 1;
+    opacity: .6;
   }
 }
 
